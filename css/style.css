@@ -1,0 +1,209 @@
+body, h1, h2, span, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: #013243;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: -99;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left:  100px;
+    padding-right:  200px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+.container h1{
+    color: #32f5c8;
+    font-size: 8rem;
+    font-family: "Sen";
+    padding-bottom: 2rem;
+}
+
+.prop {
+    display: flex;
+    padding-bottom: 1.5rem;
+    color: #a9bdc6;
+    font-family: "Inter";
+    width: 50ch;
+}
+
+.container button {
+    display: flex;
+    background-color: #32f5c8;
+    color: #013243;
+    border: none;
+    padding: 16px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.container button:hover {
+    background-color: #26cfa8;
+
+}
+
+.twitter {
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    color: #a9bdc6;
+    font-family: "Inter";
+}
+
+.twitter::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: url(../Assets/Twitter.svg);
+    display: grid;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.img1 {
+    position: absolute;
+    left: 1100px;
+    top: 250px;
+    z-index: -1;
+}
+
+.img2 {
+    position: absolute;
+    left: 1050px;
+    top: -15px;
+    z-index: -1;
+}
+
+.img3 {
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    z-index: -1;
+}
+
+.img4 {
+    position: absolute;
+    left: 920px;
+    bottom: -100px;
+    z-index: -1;
+}
+
+.img5 {
+    position: absolute;
+    top: 30px;
+    left: 870px;
+    z-index: -1;
+}
+
+.img6 {
+    position: absolute;
+    bottom: 169px;
+    left: 750px;
+    z-index: -1;
+}
+
+@media(max-width:1250px) {
+
+    .container{
+        padding-right: 0px;
+    }
+    .container h1{
+        font-size: 6rem;
+        padding-top: 200px;
+    }
+    .img1 {
+        left: 780px;
+    }
+    .img2 {
+        left: 720px;
+        top: -15px;
+    }
+    .img3 {
+        left: 150px;
+        top: 60px;
+    }
+    .img4 {
+        left:670px;
+        bottom: -150px;
+    }
+    .img5 {
+        top: 160px;
+        left: 600px;
+    }
+    .img6 {
+        bottom: 140px;
+    }
+}
+
+@media(max-width:1000px) {
+    .container h1{
+        font-size: 5rem;
+    }
+}
+
+@media(max-width:920px) {
+    .container {
+        padding-left: 20px;
+    }
+    .container h1{
+        font-size: 4rem;
+        padding-top: 140px;
+    }
+    .img1, .img4, .img5 {
+        display: none;
+    }
+    .img2 {
+        left: 400px;
+        top: 40px;
+    }
+    .img6 {
+        left: 300px;
+        top: 480px;
+    }
+}
+
+@media(max-width:850px) {
+    body{
+        padding-top: 20px;
+    }
+    .container {
+        padding-left: 10px;
+    }
+    .container h1{
+        font-size: 2rem;
+        padding-top: 140px;
+    }
+    .prop {
+        font-size: .75rem;
+    }
+    .img2 {
+        left: 200px;
+        top: 60px;
+        width: 150px
+    }
+    .img3 {
+        left: 20px;
+        top: 70px;
+        width: 120px;
+    }
+    .img6 {
+        left: 220px;
+        top: 350px;
+    }
+}
